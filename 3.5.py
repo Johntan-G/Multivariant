@@ -15,6 +15,6 @@ with open('/home/johntan/Desktop/3.5.txt', 'r') as f:
 
 X = sm.add_constant(X)
 
-model = sm.OLS(Y,X)
-results = model.fit()
+results = sm.OLS(Y, X).fit()
+
 print results.summary()
